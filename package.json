@@ -1,14 +1,14 @@
 {
   "name": "fcm-notifier",
   "version": "1.0.0",
-  "description": "Send FCM push notifications using HTTP v1 API",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },
   "dependencies": {
+    "firebase-admin": "^11.8.0",
     "express": "^4.18.2",
-    "firebase-admin": "^11.10.1",
-    "body-parser": "^1.20.2"
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5"
   }
 }

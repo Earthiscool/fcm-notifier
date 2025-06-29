@@ -1,10 +1,11 @@
 const express = require('express');
 const admin = require('firebase-admin');
 const bodyParser = require('body-parser');
+const cors = require('cors');
 
 const app = express();
 app.use(bodyParser.json());
-app.use(require('cors')({ origin: ['http://127.0.0.1:5500', 'https://your-deployed-site.com'] }));
+app.use(cors({ origin: ['http://127.0.0.1:5500', 'https://your-deployed-site.com'] }));
 
 const serviceAccount = require('./serviceAccountKey.json');
 
